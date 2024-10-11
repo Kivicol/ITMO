@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-29T20:30:58.882498900Z</date>
+  <millis>1717014658882</millis>
+  <nanos>498900</nanos>
+  <sequence>0</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.DBParser</class>
+  <method>load</method>
+  <thread>1</thread>
+  <message>Table was successfully loaded</message>
+</record>
+<record>
+  <date>2024-05-29T20:30:58.969193700Z</date>
+  <millis>1717014658969</millis>
+  <nanos>193700</nanos>
+  <sequence>1</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.Server</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>Server started on port 1658</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:07.009641200Z</date>
+  <millis>1717014667009</millis>
+  <nanos>641200</nanos>
+  <sequence>2</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>73</thread>
+  <message>Got message from /192.168.1.113 : 50315 - </message>
+</record>
+<record>
+  <date>2024-05-29T20:31:07.012726Z</date>
+  <millis>1717014667012</millis>
+  <nanos>726000</nanos>
+  <sequence>3</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>48</thread>
+  <message>Got command  from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:07.118808300Z</date>
+  <millis>1717014667118</millis>
+  <nanos>808300</nanos>
+  <sequence>4</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>47</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:13.721575700Z</date>
+  <millis>1717014673721</millis>
+  <nanos>575700</nanos>
+  <sequence>5</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>70</thread>
+  <message>Got message from /192.168.1.113 : 50315 - Add</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:13.745162900Z</date>
+  <millis>1717014673745</millis>
+  <nanos>162900</nanos>
+  <sequence>6</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>51</thread>
+  <message>Got command ADD from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:13.886657700Z</date>
+  <millis>1717014673886</millis>
+  <nanos>657700</nanos>
+  <sequence>7</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>50</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:17.674508100Z</date>
+  <millis>1717014677674</millis>
+  <nanos>508100</nanos>
+  <sequence>8</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>64</thread>
+  <message>Got message from /192.168.1.113 : 50315 - Show</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:17.697904100Z</date>
+  <millis>1717014677697</millis>
+  <nanos>904100</nanos>
+  <sequence>9</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>45</thread>
+  <message>Got command SHOW from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:17.744941700Z</date>
+  <millis>1717014677744</millis>
+  <nanos>941700</nanos>
+  <sequence>10</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>44</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:39.507669200Z</date>
+  <millis>1717014699507</millis>
+  <nanos>669200</nanos>
+  <sequence>11</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>68</thread>
+  <message>Got message from /192.168.1.113 : 50315 - Add</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:39.520356100Z</date>
+  <millis>1717014699520</millis>
+  <nanos>356100</nanos>
+  <sequence>12</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>27</thread>
+  <message>Got command ADD from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:39.674577500Z</date>
+  <millis>1717014699674</millis>
+  <nanos>577500</nanos>
+  <sequence>13</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>26</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:41.715341300Z</date>
+  <millis>1717014701715</millis>
+  <nanos>341300</nanos>
+  <sequence>14</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>69</thread>
+  <message>Got message from /192.168.1.113 : 50315 - Show</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:41.725727300Z</date>
+  <millis>1717014701725</millis>
+  <nanos>727300</nanos>
+  <sequence>15</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>39</thread>
+  <message>Got command SHOW from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:41.728650100Z</date>
+  <millis>1717014701728</millis>
+  <nanos>650100</nanos>
+  <sequence>16</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>38</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:53.373228600Z</date>
+  <millis>1717014713373</millis>
+  <nanos>228600</nanos>
+  <sequence>17</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>67</thread>
+  <message>Got message from /192.168.1.113 : 50315 - </message>
+</record>
+<record>
+  <date>2024-05-29T20:31:53.383274900Z</date>
+  <millis>1717014713383</millis>
+  <nanos>274900</nanos>
+  <sequence>18</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>36</thread>
+  <message>Got command  from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:53.490772800Z</date>
+  <millis>1717014713490</millis>
+  <nanos>772800</nanos>
+  <sequence>19</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>35</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:55.487328400Z</date>
+  <millis>1717014715487</millis>
+  <nanos>328400</nanos>
+  <sequence>20</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>65</thread>
+  <message>Got message from /192.168.1.113 : 50315 - Show</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:55.493475500Z</date>
+  <millis>1717014715493</millis>
+  <nanos>475500</nanos>
+  <sequence>21</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>42</thread>
+  <message>Got command SHOW from /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:31:55.529155400Z</date>
+  <millis>1717014715529</millis>
+  <nanos>155400</nanos>
+  <sequence>22</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>41</thread>
+  <message>Sending result on /192.168.1.113</message>
+</record>
+<record>
+  <date>2024-05-29T20:32:07.715883900Z</date>
+  <millis>1717014727715</millis>
+  <nanos>883900</nanos>
+  <sequence>23</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>74</thread>
+  <message>Got message from /192.168.1.113 : 50315 - Remove {id}</message>
+</record>
+<record>
+  <date>2024-05-29T20:32:07.762653700Z</date>
+  <millis>1717014727762</millis>
+  <nanos>653700</nanos>
+  <sequence>24</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>54</thread>
+  <message>Got command REMOVE {ID} from /192.168.1.113</message>
+</record>
+</log>

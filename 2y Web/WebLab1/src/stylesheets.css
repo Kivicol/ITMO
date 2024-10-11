@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[title="header"] {
+    font-family: cursive;
+    padding-top: 20px;
+    padding-left: 100px;
+    color: #0061ab;
+}
+
+.info-block {
+    padding-top: 50px;
+}
+
+.info-block::before {
+    content: "";
+    display: block;
+    height: 20px;
+    background-color: #f0f6ff;
+}
+
+#layout {
+    background-color: #f0f6ff;
+    margin: 30px;
+    padding: 60px;
+    border-radius: 80px;
+}
+
+.body {
+    font-family: sans-serif;
+    height: 100svh;
+    width: 100svw;
+}
+
+header, .info-block, .coord-header, .coord-picker, .input-box, .label {
+    font-family: inherit;
+}
+
+.canvas img {
+    width: auto;
+    border-radius: 30px;
+}
+
+#layout {
+    display: flex;
+    place-content: space-evenly;
+    flex-direction: column;
+}
+
+.form-n-canvas{
+    display: flex;
+    place-content: space-evenly;
+}
+
+.canvas {
+    padding-top: 100px;
+}
+
+table {
+    margin: auto;
+    background-color: #f0f6ff;
+    border: 5px solid #3399ff;
+    border-radius: 15px;
+}
+
+.message {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.coord-header {
+    padding-top: 30px;
+    font-size: 24px;
+    padding-bottom: 70px;
+}
+
+.coord-picker {
+    font-size: 32px;
+    padding: 10px;
+}
+
+.input-box {
+    padding: 15px;
+    font-size: 24px;
+    margin: 15px;
+    border-radius: 22px;
+}
+
+.table-buttons {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    flex: auto;
+    background-color: #f0f6ff;
+    border-color: #0091ff;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 15px;
+    transition-duration: 0.3s;
+}
+
+.table-buttons:hover {
+    color: white;
+    background-color: #0091ff;
+    border-color: #0091ff;
+}
+
+.table-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: #f0f6ff;
+    border-color: #0091ff;
+    border-width: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+    transition-duration: 0.4s;
+}
+th{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px;
+    border-block: transparent;
+}
+
+.table-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 30px;
+}
+
+
+.label {
+    font-size: 32px;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}

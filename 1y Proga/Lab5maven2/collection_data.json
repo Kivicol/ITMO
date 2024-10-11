@@ -1,0 +1,122 @@
+[
+  {
+    "id": 4505,
+    "name": "9",
+    "coordinates": {
+      "x": 9,
+      "y": 9
+    },
+    "creationDate": "2024-04-25T12:38:59.6591851+03:00[Europe/Moscow]",
+    "from": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "to": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "distance": 9.0
+  },
+  {
+    "id": 5424,
+    "name": "9",
+    "coordinates": {
+      "x": 9,
+      "y": 9
+    },
+    "creationDate": "2024-04-25T12:39:00.3586702+03:00[Europe/Moscow]",
+    "from": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "to": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "distance": 9.0
+  },
+  {
+    "id": 6446,
+    "name": "9",
+    "coordinates": {
+      "x": 9,
+      "y": 9
+    },
+    "creationDate": "2024-04-25T12:39:01.8968056+03:00[Europe/Moscow]",
+    "from": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "to": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "distance": 9.0
+  },
+  {
+    "id": 7916,
+    "name": "9",
+    "coordinates": {
+      "x": 9,
+      "y": 9
+    },
+    "creationDate": "2024-04-25T12:38:58.7417653+03:00[Europe/Moscow]",
+    "from": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "to": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "distance": 9.0
+  },
+  {
+    "id": 9457,
+    "name": "9",
+    "coordinates": {
+      "x": 9,
+      "y": 9
+    },
+    "creationDate": "2024-04-25T12:39:04.2675208+03:00[Europe/Moscow]",
+    "from": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "to": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "distance": 9.0
+  },
+  {
+    "id": 9803,
+    "name": "9",
+    "coordinates": {
+      "x": 9,
+      "y": 9
+    },
+    "creationDate": "2024-04-25T12:39:01.1240858+03:00[Europe/Moscow]",
+    "from": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "to": {
+      "x": 9,
+      "y": 9,
+      "name": "9"
+    },
+    "distance": 9.0
+  }
+]

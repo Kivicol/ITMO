@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-24T11:46:07.167604300Z</date>
+  <millis>1716551167167</millis>
+  <nanos>604300</nanos>
+  <sequence>0</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.DBParser</class>
+  <method>load</method>
+  <thread>1</thread>
+  <message>Table was successfully loaded</message>
+</record>
+<record>
+  <date>2024-05-24T11:46:07.297948100Z</date>
+  <millis>1716551167297</millis>
+  <nanos>948100</nanos>
+  <sequence>1</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.Server</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>Server started on port 1658</message>
+</record>
+<record>
+  <date>2024-05-24T11:47:09.581361Z</date>
+  <millis>1716551229581</millis>
+  <nanos>361000</nanos>
+  <sequence>2</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>60</thread>
+  <message>Got message from /172.28.19.163 : 50617 - </message>
+</record>
+<record>
+  <date>2024-05-24T11:47:09.644175400Z</date>
+  <millis>1716551229644</millis>
+  <nanos>175400</nanos>
+  <sequence>3</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>32</thread>
+  <message>Got command  from /172.28.19.163</message>
+</record>
+<record>
+  <date>2024-05-24T11:47:09.879662100Z</date>
+  <millis>1716551229879</millis>
+  <nanos>662100</nanos>
+  <sequence>4</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>31</thread>
+  <message>Sending result on /172.28.19.163</message>
+</record>
+<record>
+  <date>2024-05-24T11:48:03.418169800Z</date>
+  <millis>1716551283418</millis>
+  <nanos>169800</nanos>
+  <sequence>5</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.ReceiverTasking</class>
+  <method>run</method>
+  <thread>69</thread>
+  <message>Got message from /172.28.19.163 : 50617 - Help</message>
+</record>
+<record>
+  <date>2024-05-24T11:48:03.545771600Z</date>
+  <millis>1716551283545</millis>
+  <nanos>771600</nanos>
+  <sequence>6</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Interpreter</class>
+  <method>interpret</method>
+  <thread>50</thread>
+  <message>Got command HELP from /172.28.19.163</message>
+</record>
+<record>
+  <date>2024-05-24T11:48:03.671289Z</date>
+  <millis>1716551283671</millis>
+  <nanos>289000</nanos>
+  <sequence>7</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.Sender</class>
+  <method>send</method>
+  <thread>49</thread>
+  <message>Sending result on /172.28.19.163</message>
+</record>

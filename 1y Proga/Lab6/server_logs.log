@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-10T09:05:57.815809800Z</date>
+  <millis>1715331957815</millis>
+  <nanos>809800</nanos>
+  <sequence>0</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.Server</class>
+  <method>start</method>
+  <thread>1</thread>
+  <message>Server started on port: 1658</message>
+</record>
+<record>
+  <date>2024-05-10T09:06:00.910637600Z</date>
+  <millis>1715331960910</millis>
+  <nanos>637600</nanos>
+  <sequence>1</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.CommandManager</class>
+  <method>handlePacket</method>
+  <thread>17</thread>
+  <message>Got command show from /172.28.28.20:50114</message>
+</record>
+<record>
+  <date>2024-05-10T09:06:00.931790100Z</date>
+  <millis>1715331960931</millis>
+  <nanos>790100</nanos>
+  <sequence>2</sequence>
+  <logger>command.utility.ServerLogger</logger>
+  <level>INFO</level>
+  <class>command.utility.CommandManager</class>
+  <method>handlePacket</method>
+  <thread>17</thread>
+  <message>Sending response /172.28.28.20:50114</message>
+</record>
+</log>
