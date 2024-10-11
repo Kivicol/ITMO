@@ -1,2 +1,7 @@
 # ITMO
- On the brink of mental collapse :3
+
+### Тайм ту ду лабы, чё
+
+<p align="center">
+  <img src="./.gifs/cat-cat-meme.gif" width = 100000>
+</p>
