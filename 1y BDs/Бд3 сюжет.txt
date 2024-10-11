@@ -1,0 +1,60 @@
+Для начала, давайте определим функциональные зависимости (ФЗ) для каждого отношения, основанные на предоставленных атрибутах:
+
+    Captain:
+        PK id → name, rank
+
+    Person:
+        PK id → name, fk_ship_id, description
+        fk_ship_id → name (если мы предполагаем, что каждое судно имеет только одного человека, что маловероятно, но у нас нет дополнительного контекста для уточнения)
+
+    Spaceship:
+        PK id → name, description
+
+    Person_action:
+        {PK, FK1} Action_id, Person_id → name, description (композитный ключ)
+
+    Planet:
+        PK id → name, description, fk_captain_id (предполагается, что каждый капитан управляет только одной планетой)
+        fk_captain_id → name (если каждый капитан уникален для планеты)
+
+    Action:
+        PK id → name, description
+        Spaceship_id → name, description (если акция уникальна для каждого корабля)
+
+Теперь, чтобы привести отношения в 3NF, мы должны убедиться, что все некластерные зависимости устранены и что все атрибуты зависят только от первичного ключа (PK) или от другого атрибута, который в свою очередь зависит от PK.
+
+Вот как могут выглядеть отношения в 3NF:
+
+    Captain:
+        PK id → name, rank
+
+    Person:
+        PK id → name, description
+        fk_ship_id → name (если предположение верно)
+
+    Spaceship:
+        PK id → name, description
+
+    Person_action (уже в 3NF, так как все некластерные зависимости устранены):
+        {PK, FK1} Action_id, Person_id → name, description
+
+    Planet:
+        PK id → name, description
+        fk_captain_id → name (если предположение верно)
+
+    Action (уже в 3NF, если предположение о Spaceship_id верно):
+        PK id → name, description
+
+После преобразования в 3NF, функциональные зависимости остаются в основном такими же, за исключением того, что мы теперь убедились, что все некластерные зависимости устранены.
+
+Теперь давайте рассмотрим BCNF. BCNF требует, чтобы каждое определение ФЗ имело вид PK → атрибуты. В нашем случае, отношения Person и Planet могут не соответствовать BCNF из-за зависимостей от внешних ключей. Чтобы привести их в BCNF, мы должны разделить эти отношения:
+
+    Person → Person_Ship:
+        Person: PK id → name, description
+        Person_Ship: fk_ship_id → name (если предположение верно)
+
+    Planet → Planet_Captain:
+        Planet: PK id → name, description
+        Planet_Captain: fk_captain_id → name (если предположение верно)
+
+Теперь все отношения находятся в BCNF, так как каждая ФЗ имеет вид PK → атрибуты.
