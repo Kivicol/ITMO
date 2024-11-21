@@ -1,0 +1,11 @@
+beans\XCoordBean.class
+beans\ResultsControllerBean.class
+beans\YCoordBean.class
+helpers\AreaChecker.class
+db\ResultDAO.class
+entity\ResultEntity$ResultEntityBuilder.class
+db\JPAUtils.class
+entity\ResultEntity.class
+db\ResultDAOImpl.class
+beans\RCoordBean.class
+db\DAOFactory.class

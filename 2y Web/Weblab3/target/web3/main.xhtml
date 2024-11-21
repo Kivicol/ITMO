@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:my="http://xmlns.jcp.org/jsf/composite/mycomponents"
+
+>
+<my:head title="Добро пожаловать в лабу номер 3"/>
+<body>
+<my:header title="Дмитришен К. Р., Р3224, 24173 варик"/>
+<main class="main">
+    <div class="section">
+        <h:link value="К начальной странице" styleClass="navigation-button2" outcome="goToIndex">
+        </h:link>
+        <h:form>
+
+
+            <h:inputHidden id="xHidden" name="x" type="number" value="#{xCoordinateBean.x}">
+            </h:inputHidden>
+            <h:inputHidden id="yHidden" name="y" type="number" value="#{yCoordinateBean.y}">
+            </h:inputHidden>
+            <h:commandButton styleClass="hidden" id="submit-btn" value="Check"
+                             actionListener="#{resultsControllerBean.addResult(xCoordinateBean.x, yCoordinateBean.y, rCoordinateBean.r)}">
+            </h:commandButton>
+
+            <h:outputLabel for="xInput" value="Coordinate X (-5; 5)"/>
+            <div class="coords-input-wrapper">
+            <h:inputText id="xInput" styleClass="coords-input" value="#{xCoordinateBean.x}"
+                         required="true" maxlength="7"
+                         requiredMessage="Value X is required"
+                         validatorMessage="The value must be from -5 to 5">
+                <f:converter converterId="jakarta.faces.Double"/>
+                <f:validateDoubleRange minimum="-5" maximum="5"/>
+            </h:inputText>
+            </div>
+
+            <h:outputLabel for="yInput" value="Coordinate Y"/>
+            <div class="coords-input-wrapper">
+                <p:spinner id="yInput" value="#{yCoordinateBean.y}" min="-5" max="5" class="coords-input">
+                </p:spinner>
+            </div>
+
+
+            <h:outputLabel for="r" value="Range R"/><br/>
+            <div class="coords-input-wrapper" id="r">
+                <p:inputText id="decimal" value="#{rCoordinateBean.r}" class="coords-input" />
+                <p:slider for="decimal" minValue="1" maxValue="5" step="0.25" range="false" onSlide="redrawCanvas();" onSlideEnd="redrawCanvas();" />
+            </div>
+
+
+            <h:commandButton value="Send" styleClass="submit-btn"
+                             actionListener="#{resultsControllerBean.addResult(xCoordinateBean.x, yCoordinateBean.y, rCoordinateBean.r)}">
+            </h:commandButton>
+        </h:form>
+    </div>
+
+    <div class="section">
+        <div class="axis-box">
+            <div class="canvas-block">
+                <canvas id="canvas1"/>
+                <canvas id="canvas2"/>
+                <canvas id="canvas3"/>
+            </div>
+            <div class="axis-block">
+                <div class="axis x">
+                    <span class="stick invisible"/>
+                    <div class="stick"><p class="mark">R</p></div>
+                    <div class="stick"><p class="mark">R/2</p></div>
+                    <span class="stick"/>
+                    <div class="stick"><p class="mark">-R/2</p></div>
+                    <div class="stick"><p class="mark">-R</p></div>
+                    <span class="stick invisible"/>
+                </div>
+                <div class="axis y">
+                    <span class="stick invisible"/>
+                    <div class="stick"><p class="mark rotated">R</p></div>
+                    <div class="stick"><p class="mark">R/2</p></div>
+                    <span class="stick"/>
+                    <div class="stick"><p class="mark">-R/2</p></div>
+                    <div class="stick"><p class="mark">-R</p></div>
+                    <span class="stick invisible"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="horizontal">
+            <p class="text">X</p>
+            <p class="text">Y</p>
+            <p class="text">R</p>
+            <p class="text">Попал</p>
+        </div>
+        <h:dataTable captionClass="rows" styleClass="rows" id="results-table" value="#{resultsControllerBean.results}"
+                     var="result">
+            <h:column styleClass="col">
+                <h:outputText value="${result.x}"/>
+            </h:column>
+            <h:column styleClass="col">
+                <h:outputText value="${result.y}"/>
+            </h:column>
+            <h:column styleClass="col">
+                <h:outputText value="${result.r}"/>
+            </h:column>
+            <h:column styleClass="col">
+                <h:outputText value="${result.result}"/>
+            </h:column>>
+        </h:dataTable>
+    </div>
+</main>
+
+
+<h:outputScript name="script.js"/>
+<h:outputScript name="timer.js"/>
+</body>
+</html>
